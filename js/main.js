@@ -117,6 +117,15 @@ gameMain.prototype = {
 	            StatusBar.hide;
 	        } catch(e){}
         }, 1000); 
+ 
+	    ambient = new Audio('assets/audio/ambient.mp3');
+	    ambient.loop = true;
+
+		setTimeout(function(){
+			ambient.play();	
+		}, 1000);
+		
+		window.addEventListener('deviceorientation', handleOrientation);
 
         getReading();
     }
@@ -211,15 +220,6 @@ function readLight(reading){
         glide.linTo(frequency, glissandos[glissando]);
 
         last_frequency = frequency;
-        
-	    ambient = new Audio('assets/audio/ambient.mp3');
-	    ambient.loop = true;
-
-		setTimeout(function(){
-			ambient.play();	
-		}, 1000);
-		
-		window.addEventListener('deviceorientation', handleOrientation);
     }
 }
 
@@ -536,9 +536,9 @@ function loadSounds(){
 	];
 	
 	allSounds = [
-		sample1 = game.add.audio('sample1', 1, false),
-		sample2 = game.add.audio('sample2', 1, false),
-		sample3 = game.add.audio('sample3', 1, false)
+		sample1 = game.add.audio('sample1', 0.8, false),
+		sample2 = game.add.audio('sample2', 0.8, false),
+		sample3 = game.add.audio('sample3', 0.8, false)
 	];
 	
 	//ambient = game.add.audio('ambient', 1, true);
