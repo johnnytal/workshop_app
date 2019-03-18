@@ -26,10 +26,6 @@ preloader.prototype = {
         game.load.image('xtraBg', 'assets/images/xtraBg.png');
         game.load.image('sound_btn', 'assets/images/sound_btn.png');
 
-        game.load.image('next_game', 'assets/images/next_game.png');
-        game.load.image('prev_game', 'assets/images/prev_game.png');
-
-        game.load.image('home_btn', 'assets/images/return.png');
         game.load.image('info', 'assets/images/info.png');
 
         game.load.spritesheet('blank', 'assets/images/blank.png', 594/4, 120);

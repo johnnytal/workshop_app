@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	<widget id="com.com.lighttheremin" version="7.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-		<name>Light Theremin</name>
-		<description>Turn light to sound</description>
-		<author email="johnnytal9@gmail.com" href="http://www.ilyichgames.com"> Johnny Tal </author>
+	<widget id="com.com.workshop" version="7.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+		<name>Workshop App</name>
+		<description>Turn stuff to other stuff</description>
+		<author email="johnnytal9@gmail.com" href="http://www.ilyichgames.com">Johnny Tal</author>
 		<content src="index.html"/>
 		
 		<access origin="*"/>
@@ -34,19 +34,7 @@
 		<plugin name="cordova-plugin-insomnia" spec="*"/>
 		<plugin name="cordova-plugin-statusbar" spec="*"/>
 		<plugin name="cordova-plugin-extension" spec="*"/>
-		
 		<plugin name="cordova-plugin-whitelist" version="1"/>
-
-	    <preference name="SplashScreen"               value="splash" />
-	    <preference name="AutoHideSplashScreen"       value="true" />
-	    <preference name="SplashScreenDelay"          value="2500" />
-	    <preference name="SplashMaintainAspectRatio"  value="true" />
-
-		<splash src="splash.png" />
-
-		<plugin name="cordova-plugin-admobpro" source="npm">
-			<variable name="PLAY_SERVICES_VERSION" value="16.0.0" />
-		</plugin>
 		
 		<icon src="512x512.png" />
 		
